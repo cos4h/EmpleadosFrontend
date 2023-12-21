@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const baseUrl =
-  "https://backendempleados-production.up.railway.app/api/employees";
+  "https://rhetorical-mountain-production.up.railway.app/api/employees";
 
 function getAll() {
   const request = axios.get(baseUrl);
