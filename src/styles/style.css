@@ -1,0 +1,116 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.body {
+    display: grid;
+    grid-template-columns: repeat(6, 1rf);
+    grid-template-rows: 1fr 5fr 1fr;
+    min-height: 100vh;
+    row-gap: 10px;
+    grid-template-areas: 
+        "header header header header header header"
+        "aside main main main main main"
+        "footer footer footer footer footer footer";       
+}
+
+body {
+    background-color: #081b29;
+    color: white;
+}
+
+.body header {
+    grid-area: header;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: #DAE9F5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.FormAddEmpl {
+    grid-area: aside;
+    background-color: white;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: black;
+    align-items: center;
+    justify-content: top;
+    display: flex;
+    flex-direction: column;
+}
+
+.FormAddEmpl form div {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.FormAddEmpl form div button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #081b29;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+.body main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    align-items:estrech;
+}
+
+.body footer {
+    grid-area: footer;
+    background-color: aquamarine;
+}
+
+
+
+.navbar {
+    display: flex;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.logo {
+    text-decoration: none;
+    color: #081b29;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.target {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:  solid 5px;
+    width: auto;
+    margin: 10px;
+    align-items:stretch;
+    vertical-align: middle;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.target img {
+    align-self: center;
+}
